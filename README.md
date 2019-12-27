@@ -1,29 +1,26 @@
-# test-app-one
+# Workers Maintenance App
+A simple app for maintaining workers, with Go backend.
 
-## Project setup
-```
+## Getting started
+Run this command below to install the npm modules needed in the project.
+```js
 npm install
 ```
-
-### Compiles and hot-reloads for development
+Run this command in the root folder to get the project started.
+```js
+npm run server
 ```
-npm run serve
+## Note
+If you run into **CORS-HEADER error**, go into the *cors-anywhere* module located here, relative to the root folder,
+```sh
+/node_modules/cors-anywhere/
 ```
-
-### Compiles and minifies for production
+Change the port number if needed in the *server.js* file and then run
+```js
+npm run start
 ```
-npm run build
+To run the server code, go into the *server* folder and run
+```sh
+./db
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Make sure to enter the correct configuration for the postgres DB in the **db.go** file.
